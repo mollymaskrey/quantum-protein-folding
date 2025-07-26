@@ -114,7 +114,9 @@ quantum-protein-folding/
 │    └── paper.pdf                       # Full research paper
 └── results/
     ├── solver_comparison               # Results for up to 24 Variables
-    └── run_28_variable_quantum_test    # 28 Variable Results using nonlinear hybrid solver
+    ├── fig1.png                        # Visualization for solver_comparison
+    ├── run_28_variable_quantum_test    # 28 Variable Results using nonlinear hybrid solver
+    └── fig2.png                        # Viasualization for 28 Var run
 ```
 
 ## Methodology
@@ -192,6 +194,7 @@ os.environ['DWAVE_SAMPLER_TOKEN'] = 'your-token-here'
 - AlphaFold team for protein structure data
 - BioPython developers for structural analysis tools
 - Quantum computing research community
+- A good background on Protein Structure can be found in Introduction to Protein Structure but Carl Branden and John Tooze
 
 ---
 
