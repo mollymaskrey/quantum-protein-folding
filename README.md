@@ -18,7 +18,7 @@ This repository contains the complete experimental pipeline comparing classical 
 ### Prerequisites
 - Python 3.9 or higher
 - D-Wave account and API token (for quantum experiments)
-- 8GB+ RAM recommended for classical experiments
+- 128GB+ RAM recommended for up to 24 variables
 
 ### Installation
 
