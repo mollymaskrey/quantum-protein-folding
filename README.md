@@ -181,12 +181,12 @@ os.environ['DWAVE_SAMPLER_TOKEN'] = 'your-token-here'
 - **Minimum**: 128GB RAM, Python 3.8+
 - **Quantum access**: D-Wave Leap account 
 
-## 📞 Contact
+## Contact
 
 - **Author**: Molly Maskrey
 - **Email**: mollymaskrey@gmail.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - D-Wave Systems for quantum computing tools
 - AlphaFold team for protein structure data
