@@ -1,12 +1,5 @@
 ### NOTE you will need to set your DWAVE SAMPLER TOKEN into the variable 'token'
 
-import os
-
-token = os.getenv("DWAVE_SAMPLER_TOKEN")
-if token is None:
-    raise ValueError("DWAVE_SAMPLER_TOKEN is not defined!")
-
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
