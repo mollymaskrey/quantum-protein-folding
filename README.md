@@ -166,7 +166,7 @@ folder.analyze_protein_structure('my_protein.pdb')
 results = folder.optimize_segment(start=20, length=6)
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### D-Wave Setup
 1. Create account at [D-Wave Leap](https://cloud.dwavesys.com/leap/)
@@ -178,9 +178,8 @@ os.environ['DWAVE_SAMPLER_TOKEN'] = 'your-token-here'
 ```
 
 ### Computational Requirements
-- **Minimum**: 4GB RAM, Python 3.8+
-- **Recommended**: 8GB+ RAM for larger classical problems
-- **Quantum access**: D-Wave Leap account (free tier available)
+- **Minimum**: 128GB RAM, Python 3.8+
+- **Quantum access**: D-Wave Leap account 
 
 ## 📚 Citation
 
