@@ -76,7 +76,8 @@ Visualization complete!
 
 ---------------------------------------------------------------------
 Fig 2:Understanding the 28-Variable Quantum Results
-These visualizations show the output from a quantum computer solving a protein folding problem that would take a classical computer over 15 minutes to solve exhaustively. The quantum solver found the answer in just a few seconds!
+These visualizations show the output from a quantum computer solving a protein folding problem that would take a classical computer over 15 minutes to solve exhaustively. 
+The quantum solver found the answer in just a few seconds!
 What You're Looking At
 Left Plot - Backbone Structure (Ramachandran Plot)
 
@@ -115,7 +116,10 @@ The presence of proline (P) at position 1 forces unusual angles (proline is know
 Tight Side Chain Clustering: The side chains (right plot) are all near the -120° region, suggesting the quantum solver found a low-energy conformation where side chains adopt similar orientations.
 
 The Quantum Advantage
-This demonstration proves that quantum computers can handle protein folding problems that push classical computers to their limits. While a classical computer would struggle for 15+ minutes checking hundreds of millions of possibilities, the quantum-classical hybrid approach navigated directly to a low-energy solution in seconds. This opens the door to optimizing much larger protein segments that would be impossible classically, potentially accelerating drug discovery and our understanding of diseases caused by misfolded proteins.
+This demonstration proves that quantum computers can handle protein folding problems that push classical computers to their limits. 
+While a classical computer would struggle for 15+ minutes checking hundreds of millions of possibilities, the quantum-classical hybrid approach
+navigated directly to a low-energy solution in seconds. This opens the door to optimizing much larger protein segments that would be impossible
+classically, potentially accelerating drug discovery and our understanding of diseases caused by misfolded proteins.
 
 ---------------------------------------------------------------------
 28-VARIABLE QUANTUM TEST COMPLETE!
