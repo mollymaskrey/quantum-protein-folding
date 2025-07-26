@@ -1,7 +1,7 @@
 
 # Quantum vs Classical Protein Folding Optimization
 
-A comparative study demonstrating where quantum computers become essential for protein folding optimization problems that are intractable for classical hardware.
+A comparative study demonstrating where quantum computers become essential for protein folding optimization problems that are intractable for classical hardware. This work was performed after taking the D-Wave Quantum Core class using remaining solver time to get more experience using the nonlinear solver on practical applications.
 
 ## 🧬 Overview
 
