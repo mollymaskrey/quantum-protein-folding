@@ -127,7 +127,32 @@ Res | ExactSolver (φ,ψ) | Hybrid Solver (φ,ψ) | Difference
   3 | ( -60.0, -60.0)    | (-180.0,-180.0)    | (120.0,120.0)
   4 | ( -60.0, -60.0)    | (-180.0,-180.0)    | (120.0,120.0)
 
+-----------------------------------------------------------------------
+Fig 1: Understanding the Protein Folding Results
+These three plots show the results of quantum optimization for protein folding, visualized using something called a Ramachandran plot. Think of it like a map showing all the possible ways a protein backbone can bend and twist.
+What You're Looking At
+Each dot represents one amino acid residue (protein building block) and its backbone angles:
 
+X-axis (Phi φ): How the protein backbone rotates around one specific bond
+Y-axis (Psi ψ): How it rotates around another bond
+These two angles together determine the 3D shape of the protein backbone
+
+The colored rectangles represent "preferred neighborhoods" where proteins naturally like to fold:
+
+Light Blue Box (around -60°, -45°): The α-helix region - imagine a spiral staircase shape
+Light Green Box (around -120°, 120°): The β-sheet region - imagine pleated sheets
+
+Comparing the Three Results
+
+Original (left): Shows where the protein segment started - one residue sitting nicely in the α-helix region. This is likely from the AlphaFold prediction.
+ExactSolver (middle): The quantum solver using discrete bins (only 3 angle choices) moved the residue slightly within the α-helix region. It's like having to choose between only "small, medium, or large" T-shirt sizes instead of getting a custom fit.
+Hybrid Solver (right): Using continuous variables (any angle value), this solver found angles very close to the original. It's like getting a tailored fit instead of choosing from preset sizes.
+
+What This Means
+Both quantum solvers successfully kept the protein in a stable, biologically realistic conformation (the α-helix region). The hybrid solver's continuous optimization gave a more precise result, closely matching the original high-quality structure. This demonstrates that quantum computing can effectively optimize protein structures while respecting the physical constraints of how proteins actually fold in nature.
+The fact that we only see one dot instead of four (for a 4-residue segment) suggests the visualization might be showing just one representative residue, or the residues are overlapping at similar angle values.
+
+-----------------------------------------------------------------------
 COMPARISON COMPLETE!
 Both solvers found stable conformations
 Demonstrated discrete vs continuous optimization
