@@ -72,7 +72,7 @@ python run_28_variable_quantum_test.py
 - Shows quantum solution where classical methods fail
 - Demonstrates consistent quantum performance scaling
 
-## 📊 Results
+## Results
 
 ### Performance Comparison
 
@@ -93,7 +93,7 @@ python run_28_variable_quantum_test.py
 - Cloud-based hybrid solver
 - Continuous variable optimization
 
-## 🧪 Scientific Impact
+## Scientific Impact
 
 This study demonstrates:
 
@@ -102,7 +102,7 @@ This study demonstrates:
 3. **Transition point identification**: Clear boundary where quantum becomes necessary
 4. **Real protein applications**: Using actual biological data (human insulin)
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 quantum-protein-folding/
@@ -117,7 +117,7 @@ quantum-protein-folding/
     └── run_28_variable_quantum_test    # 28 Variable Results using nonlinear hybrid solver
 ```
 
-## 🔬 Methodology
+## Methodology
 
 ### Classical Approach (ExactSolver)
 - **Method**: Exhaustive search with discrete variables
@@ -137,7 +137,7 @@ Both methods optimize protein conformational energy based on:
 - Steric clash avoidance
 - Amino acid-specific constraints (e.g., proline restrictions)
 
-## 📈 Usage Examples
+## Usage Examples
 
 ### Basic Protein Optimization
 ```python
@@ -181,52 +181,14 @@ os.environ['DWAVE_SAMPLER_TOKEN'] = 'your-token-here'
 - **Minimum**: 128GB RAM, Python 3.8+
 - **Quantum access**: D-Wave Leap account 
 
-## 📚 Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@article{yourname2024quantum,
-  title={Quantum Computing Meets Protein Folding: A Side-by-Side Comparison of Classical and Quantum Optimization Methods},
-  author={Your Name},
-  journal={Journal Name},
-  year={2024},
-  note={Code available at: https://github.com/[your-username]/quantum-protein-folding}
-}
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.md) for details.
-
-### Areas for Contribution
-- Additional protein test cases
-- Alternative quantum solvers (IBM Qiskit, etc.)
-- Enhanced energy functions
-- Performance optimizations
-- Documentation improvements
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🔗 Related Work
-
-- [D-Wave Ocean SDK](https://github.com/dwavesystems/dwave-ocean-sdk)
-- [AlphaFold Protein Database](https://alphafold.ebi.ac.uk/)
-- [BioPython](https://biopython.org/)
-- [Quantum Optimization Research](https://docs.dwavesys.com/docs/latest/handbook_applications.html)
-
 ## 📞 Contact
 
-- **Author**: Your Name
-- **Email**: your.email@domain.com
-- **Institution**: Your University/Organization
-- **ORCID**: [0000-0000-0000-0000](https://orcid.org/0000-0000-0000-0000)
+- **Author**: Molly Maskrey
+- **Email**: mollymaskrey@gmail.com
 
 ## 🙏 Acknowledgments
 
-- D-Wave Systems for quantum computing access
+- D-Wave Systems for quantum computing tools
 - AlphaFold team for protein structure data
 - BioPython developers for structural analysis tools
 - Quantum computing research community
