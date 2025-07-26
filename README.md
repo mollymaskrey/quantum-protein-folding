@@ -3,7 +3,7 @@
 
 A comparative study demonstrating where quantum computers become essential for protein folding optimization problems that are intractable for classical hardware. This work was performed after taking the D-Wave Quantum Core class using remaining solver time to get more experience using the nonlinear solver on practical applications.
 
-## 🧬 Overview
+## Overview
 
 This repository contains the complete experimental pipeline comparing classical exhaustive search (ExactSolver) with quantum annealing (D-Wave Hybrid) for protein dihedral angle optimization. Our study identifies the computational transition point where quantum advantage becomes necessary.
 
@@ -13,7 +13,7 @@ This repository contains the complete experimental pipeline comparing classical 
 - **Transition point**: Quantum computers become essential between 24-28 variables
 - **Hardware tested**: MacBook Pro M4 Max (128GB RAM) vs D-Wave quantum cloud
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9 or higher
