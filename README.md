@@ -111,7 +111,7 @@ quantum-protein-folding/
 ├── solver_comparison.py
 ├── run_28_variable_quantum_test.py
 ├── docs/
-│    └── paper.pdf                       # Full research paper
+│    └── ProteinFolding.pdf             # Study Paper
 └── results/
     ├── solver_comparison               # Results for up to 24 Variables
     ├── fig1.png                        # Visualization for solver_comparison
