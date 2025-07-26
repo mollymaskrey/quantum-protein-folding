@@ -50,7 +50,7 @@ export DWAVE_SAMPLER_TOKEN="your-dwave-token-here"
 Compare classical and quantum approaches on the same 4-residue protein segment:
 
 ```bash
-python src/quantum_protein_comparison.py
+python solver_comparison.py
 ```
 
 **Expected output:**
@@ -64,7 +64,7 @@ python src/quantum_protein_comparison.py
 Demonstrate quantum solving of classically intractable problems:
 
 ```bash
-python src/quantum_28_variable_test.py
+python run_28_variable_quantum_test.py
 ```
 
 **Expected output:**
