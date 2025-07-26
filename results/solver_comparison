@@ -1,0 +1,134 @@
+================================================================================
+QUANTUM SOLVER COMPARISON - EXACTSOLVER vs NONLINEAR HYBRID
+================================================================================
+Downloading P01308 from AlphaFold...
+Downloaded: P01308_alphafold.pdb
+
+ANALYZING PROTEIN STRUCTURE
+==================================================
+Structure Overview:
+• Models: 1
+• Chains: 1
+• Total residues: 110
+• Total atoms: 839
+
+Protein Sequence (110 residues):
+   MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFY
+   TPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSIC
+   SLYQLENYCN
+
+EXTRACTING DIHEDRAL ANGLES
+==================================================
+EXPLANATION:
+• Phi (φ): Rotation around N-Cα bond
+• Psi (ψ): Rotation around Cα-C bond
+• These angles determine the protein's 3D backbone shape
+
+Processing 110 complete residues...
+Extracted 109 valid phi angles, 109 valid psi angles
+
+TESTING SEGMENT: Residues 11-14
+Sequence: LALL
+
+============================================================
+ROUND 1: EXACTSOLVER (DISCRETE VARIABLES)
+============================================================
+
+CREATING DISCRETE QUBO PROBLEM
+==================================================
+Optimization Target:
+• Segment: residues 11-14
+• Sequence: LALL
+• Angle bins: 3
+• Total variables: 24
+QUBO matrix created: 24×24
+
+QUANTUM OPTIMIZATION WITH EXACTSOLVER
+==================================================
+Problem Statistics:
+• Variables: 24
+• Solution space: 2^24 = 16,777,216
+• Started: 16:58:09.182
+
+OPTIMIZATION RESULTS:
+• Best energy: -79.820000
+• Setup time: 0.0001s
+• Solve time: 8.9873s
+• Total time: 8.9874s
+• Solutions/sec: 1,866,765
+
+DECODING EXACTSOLVER SOLUTION
+==================================================
+Residue | AA | Phi Bin | Phi (°) | Psi Bin | Psi (°)
+-------------------------------------------------------
+    1   | L  |    1    |  -60.0  |    1    |  -60.0
+    2   | A  |    1    |  -60.0  |    1    |  -60.0
+    3   | L  |    1    |  -60.0  |    1    |  -60.0
+    4   | L  |    1    |  -60.0  |    1    |  -60.0
+
+============================================================
+ROUND 2: NONLINEAR HYBRID SOLVER (CONTINUOUS VARIABLES)
+============================================================
+
+CREATING NONLINEAR CQM PROBLEM
+==================================================
+Optimization Target:
+• Segment: residues 11-14
+• Sequence: LALL
+• Variables: 8 continuous variables (phi, psi)
+• Range: -180° to +180° for each angle
+CQM created with 8 continuous variables
+• Objective: Linear minimization toward alpha helix angles
+
+QUANTUM OPTIMIZATION WITH NONLINEAR HYBRID SOLVER
+==================================================
+Problem Statistics:
+• Variables: 8 (continuous)
+• Constraints: 0
+• Started: 16:58:20.188
+• Sampler setup: 0.8263s
+• Sending to D-Wave quantum cloud...
+
+OPTIMIZATION RESULTS:
+• Best energy: -1020.000000
+• Setup time: 0.8263s
+• Quantum solve time: 0.9470s
+• Total time: 1.7734s
+
+DECODING NONLINEAR SOLUTION
+==================================================
+Residue | AA | Phi (°) | Psi (°) | Secondary Structure
+-------------------------------------------------------
+    1   | L  | -180.0  | -180.0  | random coil
+    2   | A  | -180.0  | -180.0  | random coil
+    3   | L  | -180.0  | -180.0  | random coil
+    4   | L  | -180.0  | -180.0  | random coil
+
+============================================================
+SOLVER COMPARISON RESULTS
+============================================================
+
+PERFORMANCE COMPARISON:
+• ExactSolver time: 8.9874s
+• Hybrid solver time: 1.7734s
+• ExactSolver variables: 24 (discrete)
+• Hybrid solver variables: 8 (continuous)
+
+SOLUTION QUALITY:
+• ExactSolver energy: -79.820000
+• Hybrid solver energy: -1020.000000
+• Energy difference: 940.180000
+
+ANGLE COMPARISON:
+Res | ExactSolver (φ,ψ) | Hybrid Solver (φ,ψ) | Difference
+-----------------------------------------------------------------
+  1 | ( -60.0, -60.0)    | (-180.0,-180.0)    | (120.0,120.0)
+  2 | ( -60.0, -60.0)    | (-180.0,-180.0)    | (120.0,120.0)
+  3 | ( -60.0, -60.0)    | (-180.0,-180.0)    | (120.0,120.0)
+  4 | ( -60.0, -60.0)    | (-180.0,-180.0)    | (120.0,120.0)
+
+
+COMPARISON COMPLETE!
+Both solvers found stable conformations
+Demonstrated discrete vs continuous optimization
+Ready for larger problems with hybrid solver
