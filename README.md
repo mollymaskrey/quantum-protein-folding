@@ -108,22 +108,13 @@ This study demonstrates:
 quantum-protein-folding/
 ├── README.md                           # This file
 ├── requirements.txt                    # Python dependencies
-├── src/
-│   ├── quantum_protein_comparison.py   # Main 24-variable comparison
-│   ├── quantum_28_variable_test.py     # Quantum advantage demonstration
-│   └── utils/
-│       ├── protein_analysis.py         # Protein structure utilities
-│       ├── visualization.py            # Plotting and analysis tools
-│       └── quantum_solvers.py          # Quantum optimization methods
-├── data/
-│   ├── sample_proteins/                # Example protein structures
-│   └── results/                        # Experimental outputs
+├── solver_comparison.py
+├── run_28_variable_quantum_test.py
 ├── docs/
-│   ├── paper.pdf                       # Full research paper
-│   └── methods.md                      # Detailed methodology
-└── examples/
-    ├── basic_usage.py                  # Simple usage examples
-    └── custom_proteins.py              # Using your own protein data
+│    └── paper.pdf                       # Full research paper
+└── results/
+    ├── solver_comparison               # Results for up to 24 Variables
+    └── run_28_variable_quantum_test    # 28 Variable Results using nonlinear hybrid solver
 ```
 
 ## 🔬 Methodology
