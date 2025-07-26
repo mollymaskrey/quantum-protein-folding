@@ -194,7 +194,7 @@ os.environ['DWAVE_SAMPLER_TOKEN'] = 'your-token-here'
 - AlphaFold team for protein structure data
 - BioPython developers for structural analysis tools
 - Quantum computing research community
-- A good background on Protein Structure can be found in Introduction to Protein Structure but Carl Branden and John Tooze
+- A good background on Protein Structure can be found in Introduction to Protein Structure by Carl Branden and John Tooze
 
 ---
 
